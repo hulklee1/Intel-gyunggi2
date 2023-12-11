@@ -2,7 +2,7 @@
 ## Intel-gyunggi2
 ### Intel-gyunggi2
 #### Intel-gyunggi2
-'''
+```
 	if(val == 0) //for(int i = 0;i < val; i++)  //
 	{
 		HAL_GPIO_TogglePin(LD2_GPIO_Port, LD2_Pin);  // LED On
@@ -14,4 +14,4 @@
 	}
 	else
 		HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, 0);  // LED Off
-'''
+```
