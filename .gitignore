@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+/.vs
+/Test01-Hello/.vs
+/Test01-Hello/bin/Debug
+/Test01-Hello/obj
