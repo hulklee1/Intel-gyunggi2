@@ -8,18 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WinTest02_Memo
+namespace WinTest03_COM
 {
-    public partial class frmSearch : Form
+    public partial class frmConfig : Form
     {
-        public frmSearch(int op = 0)
+        public frmConfig()
         {
             InitializeComponent();
-            if(op == 1)
-            {
-                tbReplace.Visible = false;
-                label2.Visible = false;
-            }
+            string[] sarr = System.IO.Ports.SerialPort.GetPortNames();
+            for(int i = 0; i < sarr.Length; i++) cbCom.Items.Add(sarr[i]);
+
         }
     }
 }

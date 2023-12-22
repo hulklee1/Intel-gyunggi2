@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace WinTest02_Memo
 {
-    public partial class frmSearch : Form
+    public partial class frmAbout : Form
     {
-        public frmSearch(int op = 0)
+        public frmAbout()
         {
             InitializeComponent();
-            if(op == 1)
-            {
-                tbReplace.Visible = false;
-                label2.Visible = false;
-            }
         }
     }
 }

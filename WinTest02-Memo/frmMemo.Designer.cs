@@ -30,8 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.Popup1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.tbMemo = new System.Windows.Forms.TextBox();
             this.mnuFile = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuNew = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuOpen = new System.Windows.Forms.ToolStripMenuItem();
@@ -43,7 +41,11 @@
             this.mnuReplace = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuView = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuHelp = new System.Windows.Forms.ToolStripMenuItem();
+            this.Popup1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.tbMemo = new System.Windows.Forms.TextBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
+            this.mnuAbout = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,23 +58,9 @@
             this.mnuHelp});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(566, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(587, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
-            // 
-            // Popup1
-            // 
-            this.Popup1.Name = "Popup1";
-            this.Popup1.Size = new System.Drawing.Size(61, 4);
-            // 
-            // tbMemo
-            // 
-            this.tbMemo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbMemo.Location = new System.Drawing.Point(0, 24);
-            this.tbMemo.Multiline = true;
-            this.tbMemo.Name = "tbMemo";
-            this.tbMemo.Size = new System.Drawing.Size(566, 326);
-            this.tbMemo.TabIndex = 2;
             // 
             // mnuFile
             // 
@@ -147,19 +135,42 @@
             // 
             // mnuHelp
             // 
+            this.mnuHelp.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnuAbout});
             this.mnuHelp.Name = "mnuHelp";
             this.mnuHelp.Size = new System.Drawing.Size(44, 20);
             this.mnuHelp.Text = "Help";
+            // 
+            // Popup1
+            // 
+            this.Popup1.Name = "Popup1";
+            this.Popup1.Size = new System.Drawing.Size(61, 4);
+            // 
+            // tbMemo
+            // 
+            this.tbMemo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbMemo.Location = new System.Drawing.Point(0, 24);
+            this.tbMemo.Multiline = true;
+            this.tbMemo.Name = "tbMemo";
+            this.tbMemo.Size = new System.Drawing.Size(587, 318);
+            this.tbMemo.TabIndex = 2;
             // 
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
+            // mnuAbout
+            // 
+            this.mnuAbout.Name = "mnuAbout";
+            this.mnuAbout.Size = new System.Drawing.Size(180, 22);
+            this.mnuAbout.Text = "About myMemo...";
+            this.mnuAbout.Click += new System.EventHandler(this.mnuAbout_Click);
+            // 
             // frmMemo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(566, 350);
+            this.ClientSize = new System.Drawing.Size(587, 342);
             this.Controls.Add(this.tbMemo);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
@@ -190,6 +201,8 @@
         private System.Windows.Forms.ToolStripMenuItem mnuView;
         private System.Windows.Forms.ToolStripMenuItem mnuHelp;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.ToolStripMenuItem mnuAbout;
+        private System.Windows.Forms.ColorDialog colorDialog1;
     }
 }
 
