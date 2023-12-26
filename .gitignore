@@ -46,3 +46,8 @@
 /WinTest02-Memo/.vs
 /WinTest03-COM/bin/Debug
 /WinTest03-COM/obj/Debug
+/WinTest03-COM/.vs
+/WinTest04-DBManager/bin/Debug
+/WinTest04-DBManager/obj/Debug
+/TestDatabase.mdf
+/TestDatabase_log.ldf
